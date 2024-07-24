@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="/imgs/pelicula.png">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/responsiveQuerys.css">
     <title>Eccomerce</title>
@@ -38,8 +39,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="fa-solid fa-couch"></i> GM</a>
+              <a class="nav-link active" aria-current="page" href="#">
+                <img id="icon-gm" src="/imgs/pelicula.png" alt="icono">
+              </a>
             </li>
             <li class="nav-item">
                   <a class="dropdown-item" href="#movies">Principales</a>
@@ -81,11 +83,9 @@
       <span class="line"></span>
        <!-- About Us -->
 
-    <section id="about-us">
-      <!-- <h2>Nosotros</h2> -->     
+    <!-- <section id="about-us">
        <p>Tienda de Peliculas  📽️</p>
-
-    </section>
+    </section> -->
 
       <div id="gallery-poster"></div>
     </section>
@@ -112,7 +112,6 @@
           <option value="western">Western</option>
           <option value="horror">Terror</option>
           <option value="thriller">Thriller</option>
-          <!-- Agregar más opciones según sea necesario -->
         </select>
       </div>
       <div id="list-main-movies"></div>
@@ -145,7 +144,7 @@
         <p id="email-contact"></p>
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message"></textarea>
-        <input type="submit"></input>
+        <input id="submit" type="submit"></input>
       </form>
     </section>
 

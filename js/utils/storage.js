@@ -10,15 +10,3 @@ export const loadFromLocalStorage = (key) => {
     return [];
   }
 };
-
-
-// export let arrayCart = JSON.parse(localStorage.getItem("arrayCart")) || [];
-// export let arrayProfiles = JSON.parse(localStorage.getItem("arrayProfiles")) || [];
-
-// export const saveToLocalStorage = () => {
-//   localStorage.setItem("arrayCart", JSON.stringify(arrayCart));
-// };
-
-// export const saveToLocalStorageProfiles = () => {
-//   localStorage.setItem("arrayProfiles", JSON.stringify(arrayProfiles));
-// };

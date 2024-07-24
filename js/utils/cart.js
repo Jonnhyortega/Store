@@ -16,6 +16,7 @@ export function renderArrayCart() {
     cart.innerHTML = `<span id="cart-empty">Carrito vacío</span>`;
     numberProducts.textContent = totalProductsCart;
   } else if(arrayCart.length > 0) {
+
     cart.innerHTML = `<p>Productos <i class="fa-brands fa-product-hunt"></i></p>`;
     arrayCart.forEach((product) => {
       cart.innerHTML += `

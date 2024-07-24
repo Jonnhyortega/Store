@@ -52,16 +52,11 @@ input[type="submit"]:hover {
 
 /* HEADER */
 
-.navbar {
+#navbar {
   position: fixed;
   width: 100%;
+  height: calc(100vh - 90vh);
   place-items: center;
-  background-color: black !important;
-  /* background: linear-gradient(to bottom,
-  #053C5E 10%,
-  #1F7A8C,
-  #A31621 99%
-) !important; */
   z-index: 10;
 }
 
@@ -78,7 +73,7 @@ input[type="submit"]:hover {
 
 #navbar > .container-fluid > #navbarSupportedContent > ul > li > a {
   color: white;
-  font-weight: 800;
+  font-weight: 400;
   padding: 0 0 0.3em 0;
   border-bottom: 1px solid transparent;
   transition: 0.2s ease-in;
@@ -100,11 +95,8 @@ input[type="submit"]:hover {
   background-color: rgba(209, 213, 219, 0.3);
 }
 
-.dropdown-item {
-  color: white;
-}
 .dropdown-item:hover {
-  color: grey;
+  color: green !important;
 }
 
 .dropdown-toggle:hover {
@@ -117,27 +109,17 @@ input[type="submit"]:hover {
   gap: 10px;
 }
 
-.nav-link:hover {
-  color: gold;
-}
-
-.navbar-collapse .nav-link {
-  padding-right: 40px;
-}
-
 .dropdown {
-  margin-left: 30px !important;
+  margin-left: 40px !important;
 }
+
 /* CART */
 #dropdown-cart {
   padding: 1rem 4rem;
   overflow-y: scroll;
   max-height: 500px;
   color: white;
-  backdrop-filter: blur(25px) saturate(200%);
-  -webkit-backdrop-filter: blur(25px) saturate(200%);
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid rgba(209, 213, 219, 0.3);
+  background-color: black !important;
 }
 
 #dropdown-cart::-webkit-scrollbar {
@@ -275,6 +257,12 @@ input[type="submit"]:hover {
   width: 100px;
 }
 
+#number-products {
+  position: absolute;
+  top: -15px;
+  right: 2px;
+  font-weight: 500;
+}
 /* CART */
 
 /* HEADER */
@@ -290,9 +278,15 @@ h1 {
 }
 
 h1 > i {
-  color: green;
   text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green,
     1px 1px 0 green;
+    color: green;
+}
+
+#icon-gm {
+  color: green;
+  width: 30px;
+  margin-right: 30px;
 }
 
 .line {
@@ -416,14 +410,15 @@ h1 > i {
 #movie > div > div {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
 #movie > div > div > span {
   font-weight: 800;
-  text-align: left;
   padding: 0.2rem;
   border-radius: 10px;
   z-index: -1;
+  text-align: justify;
 }
 
 .ocultar {
@@ -486,6 +481,7 @@ h1 > i {
   border: none;
   cursor: pointer;
   border: 1px solid white;
+  text-align: center;
 }
 
 #filter > select > option {
@@ -501,6 +497,7 @@ h1 > i {
   box-shadow: 1px 1px 4px 1px black;
   color: white;
 }
+
 /* MAIN MOVIES */
 
 /* SEARCH MOVIES */
@@ -524,8 +521,6 @@ h1 > i {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  /* width: 80%; */
-  height: 500px;
   border-radius: 15px;
 }
 
@@ -581,9 +576,9 @@ h1 > i {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   place-items: center;
 }
+
 #contact > span {
   max-width: 200px;
   color: white;
@@ -603,7 +598,6 @@ h2 {
   margin: 0 auto;
   width: 30%;
   display: flex;
-  gap: 1rem;
   flex-direction: column;
   align-items: center;
   color: var(--fiveth-color);
@@ -620,13 +614,6 @@ h2 {
 
 #contact-form > input {
   margin-top: 1rem;
-}
-
-#contact-form > #name-contact,
-#contact-form > #email-contact {
-  font-size: 1rem;
-  color: red;
-  font-weight: 700;
 }
 
 /* CONTACTO */
@@ -659,6 +646,11 @@ footer > h1 {
 }
 footer > p {
   margin-top: 3rem;
+}
+
+#submit {
+  font-weight: 700;
+  font-family: var(--title-font);
 }
 /* FOOTER */
 

@@ -74,10 +74,11 @@ export async function searchMovie() {
 export function filterMovies() {
   let containerMainMovies = document.querySelector("#list-main-movies");
   let genreSelect = document.querySelector("#genre-select");
-  let selectedValue = genreSelect.value;
+  let filterButton = document.querySelector("#filter-button")
   renderMovie(containerMainMovies, arrayAll);
-
-  document.querySelector("#filter-button").addEventListener("click", () => {
+  
+  filterButton.addEventListener("click", () => {
+    let selectedValue = genreSelect.value;
     switch (selectedValue) {
       case "all":
         containerMainMovies.innerHTML = "";
